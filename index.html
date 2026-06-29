@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sam Olaosebikan | Business Analyst | Finance | Data</title>
+  <title>Sam Olaosebikan | Business Analyst | Data | Finance</title>
 
   <style>
     body {
@@ -13,6 +13,31 @@
       background: #f5f7fb;
       color: #1f2937;
       line-height: 1.6;
+    }
+
+    /* NAVIGATION */
+    nav {
+      background: #0f172a;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 6px 10px;
+      border-radius: 6px;
+    }
+
+    nav a:hover {
+      background: #1f2937;
     }
 
     header {
@@ -71,6 +96,29 @@
       margin-bottom: 7px;
     }
 
+    /* SKILL CHIPS */
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .skill {
+      background: #0f172a;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-size: 13px;
+      transition: 0.2s ease;
+      cursor: default;
+    }
+
+    .skill:hover {
+      background: #1f2937;
+      transform: scale(1.05);
+    }
+
     .cta {
       text-align: center;
     }
@@ -95,12 +143,19 @@
 
 <body>
 
+<!-- NAVIGATION -->
+<nav>
+  <a href="index.html">🏠 Home</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="mysanity.html">📄 MySanity Case Study</a>
+</nav>
+
 <header>
   <h1>Sam Olaosebikan</h1>
-  <p><strong>Business Analyst | Finance | Data & Process Improvement</strong></p>
+  <p><strong>Business Analyst | Data Analyst | Finance & Process Improvement</strong></p>
   <p>Power BI | SQL | Excel | SAP | Dynamics 365</p>
   <p>ACA | AAT | Google Data Analytics | CFI Certified</p>
-  <p>📧 olasamz09@gmail.com | 📞 +44 7818 116389 | Leicester, UK</p>
 </header>
 
 <div class="container">
@@ -108,135 +163,82 @@
 <section>
   <h2>Professional Focus</h2>
   <p>
-    Business and Finance Analyst with experience across public sector operations, financial systems, and data analysis.
-    Skilled in requirements gathering, process improvement, and translating business needs into structured insights and system solutions.
-    Currently expanding into product and AI-driven system design through MySanity.
+    Business Analyst with experience across public sector operations, financial systems, and data-driven decision support.
+    Skilled in translating business requirements into structured insights, process improvements, and reporting solutions.
+    Currently developing product thinking capabilities through AI-driven case study design (MySanity).
   </p>
 </section>
 
 <section>
   <h2>Core Skills & Capabilities</h2>
 
-  <h3>Business Analysis & Delivery</h3>
-  <ul>
-    <li>Requirements Gathering & Stakeholder Management</li>
-    <li>Process Mapping (As-Is / To-Be)</li>
-    <li>Business & Functional Requirements Documentation</li>
-    <li>User Stories & Use Case Development</li>
-    <li>UAT Support & Testing Coordination</li>
-  </ul>
+  <h3>Business Analysis</h3>
+  <div class="skills-grid">
+    <span class="skill">Requirements Gathering</span>
+    <span class="skill">Stakeholder Management</span>
+    <span class="skill">Process Mapping</span>
+    <span class="skill">User Stories</span>
+    <span class="skill">UAT Testing</span>
+  </div>
 
   <h3>Data & Analytics</h3>
-  <ul>
-    <li>Data Analysis & Insight Generation</li>
-    <li>Power BI Dashboard Design & Reporting</li>
-    <li>SQL Data Extraction & Querying</li>
-    <li>Advanced Excel (Power Query, PivotTables)</li>
-    <li>Trend & Root Cause Analysis</li>
-  </ul>
+  <div class="skills-grid">
+    <span class="skill">Power BI</span>
+    <span class="skill">SQL</span>
+    <span class="skill">Excel (Advanced)</span>
+    <span class="skill">Data Analysis</span>
+    <span class="skill">Root Cause Analysis</span>
+  </div>
 
   <h3>Finance & Systems</h3>
-  <ul>
-    <li>Financial & Operational Reporting</li>
-    <li>Accounts Payable & Reconciliation Processes</li>
-    <li>Budgeting, Forecasting & Variance Analysis</li>
-    <li>ERP Systems: SAP & Microsoft Dynamics 365</li>
-  </ul>
-
-  <h3>Tools</h3>
-  <ul>
-    <li>Power BI | Excel | SQL</li>
-    <li>SAP | Dynamics 365</li>
-    <li>MS Project | SharePoint | Visio</li>
-  </ul>
+  <div class="skills-grid">
+    <span class="skill">Financial Reporting</span>
+    <span class="skill">Reconciliations</span>
+    <span class="skill">Budgeting</span>
+    <span class="skill">SAP</span>
+    <span class="skill">Dynamics 365</span>
+  </div>
 </section>
 
-<section>
+<section id="experience">
   <h2>Professional Experience</h2>
 
   <h3>Technical Officer – Leicester City Council (2025–Present)</h3>
   <ul>
     <li>Analysed mobility and parking datasets to support operational decision-making and reporting.</li>
-    <li>Ensured data accuracy, integrity, and compliance for internal reporting and audits.</li>
-    <li>Identified data inconsistencies and implemented corrective actions to improve data quality.</li>
-    <li>Supported process improvement through trend analysis of parking and traffic data.</li>
+    <li>Ensured data integrity, accuracy, and compliance for internal reporting and audits.</li>
   </ul>
 
   <h3>Customer Service Officer – Leicester City Council (2024–2024)</h3>
   <ul>
-    <li>Managed high-volume customer interactions in a fast-paced transport environment.</li>
-    <li>Handled enquiries, complaints, and service requests with strong communication and accuracy.</li>
-    <li>Provided transport information including routes and schedules.</li>
-    <li>Maintained interaction records and escalated complex issues when required.</li>
+    <li>Delivered high-volume frontline customer service in transport operations.</li>
   </ul>
 
   <h3>Business Analyst – MySanity (AI Product Case Study) (2025–Present)</h3>
   <ul>
-    <li>Defined product requirements for AI-driven wellbeing and productivity platform.</li>
-    <li>Designed user journeys, onboarding flows, and engagement systems.</li>
-    <li>Translated business needs into structured MVP scope and BA documentation.</li>
-    <li>Collaborated with developers on system design and feature prioritisation.</li>
-    <li><strong>Focus:</strong> Product thinking and AI-driven behavioural insight design.</li>
+    <li>Defined structured business requirements for AI wellbeing platform.</li>
+    <li>Designed user journeys and behavioural engagement systems.</li>
   </ul>
 
-  <h3>Financial Analyst – Doncept (2022–2024)</h3>
-  <ul>
-    <li>Created process maps and user stories for financial system improvements.</li>
-    <li>Supported UAT testing for payment workflow enhancements.</li>
-    <li>Improved transaction handling efficiency by ~30%.</li>
-  </ul>
-
-  <h3>Business Analyst – Inwebtify (2022–2024)</h3>
-  <ul>
-    <li>Led requirements gathering for payment processing workflows.</li>
-    <li>Designed Power BI dashboards for financial reporting and performance tracking.</li>
-    <li>Conducted root cause analysis on failed transactions and system issues.</li>
-    <li>Improved reconciliation and reporting efficiency through process optimisation.</li>
-  </ul>
-
-  <h3>Lecturer – Financial Accounting & Audit (2019–2021)</h3>
-  <ul>
-    <li>Delivered training in IFRS, GAAP, financial reporting, and audit procedures.</li>
-    <li>Developed structured learning materials and assessments.</li>
-    <li>Mentored students preparing for professional accounting qualifications.</li>
-  </ul>
-
-  <h3>Audit Intern – SOA Professionals (2017)</h3>
-  <ul>
-    <li>Performed risk assessments and financial statement analysis.</li>
-    <li>Supported audit procedures and identified reporting inconsistencies.</li>
-  </ul>
 </section>
 
-<section>
+<section id="projects">
   <h2>Selected Projects</h2>
 
   <h3>MySanity AI Platform</h3>
   <ul>
-    <li>Defined business and product requirements for AI wellbeing system.</li>
-    <li>Designed user journeys and engagement flows.</li>
-    <li><strong>Outcome:</strong> MVP-ready BA and product framework.</li>
+    <li>Business requirements, user journeys, MVP definition.</li>
   </ul>
 
-  <h3>Power BI Dashboard (Finance)</h3>
-  <ul>
-    <li>Built KPI dashboards for financial reporting and analysis.</li>
-    <li>Improved visibility of operational performance metrics.</li>
-  </ul>
-
-  <h3>Excel Automation Model</h3>
-  <ul>
-    <li>Developed reconciliation and variance analysis tools.</li>
-    <li>Reduced manual reporting workload and improved accuracy.</li>
-  </ul>
+  <a class="button" href="mysanity.html">Open Full Case Study</a>
 </section>
 
 <section class="cta">
   <h2>Let’s Connect</h2>
-  <p>I am actively seeking Business Analyst, Data Analyst, and Finance Transformation roles.</p>
+  <p>Actively seeking Business Analyst, Data Analyst, and Finance roles.</p>
+
   <a class="button" href="mailto:olasamz09@gmail.com">Contact Me</a>
-  <a class="button" href="#">Download CV</a>
-  <a class="button" href="#">LinkedIn</a>
+  <a class="button" href="mysanity.html">View Case Study</a>
 </section>
 
 </div>
