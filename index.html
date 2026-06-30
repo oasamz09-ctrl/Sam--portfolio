@@ -3,234 +3,204 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sam Olaosebikan | Business Analyst | Data | Finance</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f7fb;
-      color: #1f2937;
-      line-height: 1.6;
-    }
-
-    /* NAVIGATION */
-    nav {
-      background: #0f172a;
-      padding: 12px 20px;
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 14px;
-      padding: 6px 10px;
-      border-radius: 6px;
-    }
-
-    nav a:hover {
-      background: #1f2937;
-    }
-
-    header {
-      background: linear-gradient(135deg, #0f172a, #1f2937);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 42px;
-    }
-
-    header p {
-      margin: 6px 0;
-      opacity: 0.9;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 10px;
-    }
-
-    section {
-      margin: 30px 0;
-      background: white;
-      padding: 25px;
-      border-radius: 14px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-      transition: 0.2s ease;
-    }
-
-    section:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    }
-
-    h2 {
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 8px;
-      margin-bottom: 15px;
-    }
-
-    h3 {
-      margin-top: 18px;
-      color: #111827;
-    }
-
-    /* SKILL CHIPS */
-    .skills-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 10px;
-    }
-
-    .skill {
-      background: #0f172a;
-      color: white;
-      padding: 8px 14px;
-      border-radius: 999px;
-      font-size: 13px;
-      transition: 0.2s ease;
-    }
-
-    .skill:hover {
-      background: #1f2937;
-      transform: scale(1.05);
-    }
-
-    .cta {
-      text-align: center;
-    }
-
-    .button {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 22px;
-      background: #0f172a;
-      color: white;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    .button:hover {
-      background: #1f2937;
-    }
-
-  </style>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
 
-<!-- NAVIGATION -->
+<!-- ================= NAVIGATION ================= -->
 <nav>
-  <a href="index.html">🏠 Home</a>
-  <a href="portfolio.html">📚 Case Studies</a>
+  <div class="logo">Sam OA</div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="case-studies.html">Case Studies</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 </nav>
 
-<header>
-  <h1>Sam Olaosebikan</h1>
-  <p><strong>Business Analyst | Data Analyst | Finance & Process Improvement</strong></p>
-  <p>Power BI | SQL | Excel | SAP | Dynamics 365</p>
-  <p>ACA | AAT | Google Data Analytics | CFI Certified</p>
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="hero-content">
+
+    <h1>Business Analyst</h1>
+    <h2>Finance • Data • AI Product Thinking</h2>
+
+    <p>
+      I design and improve business systems by combining data analysis, process optimisation,
+      and AI-driven product thinking to deliver measurable impact across organisations.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="case-studies.html" class="btn btn-primary">View Case Studies</a>
+      <a href="#contact" class="btn btn-secondary">Contact Me</a>
+    </div>
+
+  </div>
 </header>
 
-<div class="container">
+<!-- ================= ABOUT ================= -->
+<section class="section">
+  <div class="container card">
 
-<section>
-  <h2>Professional Focus</h2>
-  <p>
-    Business Analyst with experience across public sector operations, financial systems, and data-driven decision support.
-    Skilled in translating business requirements into structured insights, process improvements, and reporting solutions.
-    Currently developing product thinking capabilities through AI-driven case study design (MySanity).
-  </p>
-</section>
+    <h2 class="section-title">About Me</h2>
 
-<section>
-  <h2>Core Skills & Capabilities</h2>
+    <p class="section-subtitle">
+      Business and Finance Analyst with experience across public sector operations,
+      financial systems, and data-driven decision making.
+    </p>
 
-  <h3>Business Analysis</h3>
-  <div class="skills-grid">
-    <span class="skill">Requirements Gathering</span>
-    <span class="skill">Stakeholder Management</span>
-    <span class="skill">Process Mapping</span>
-    <span class="skill">User Stories</span>
-    <span class="skill">UAT Testing</span>
-  </div>
+    <p>
+      I specialise in turning complex business problems into structured requirements,
+      process improvements, and data-driven solutions. My work spans finance operations,
+      business analysis, ERP systems, and AI-enabled product design through MySanity.
+    </p>
 
-  <h3>Data & Analytics</h3>
-  <div class="skills-grid">
-    <span class="skill">Power BI</span>
-    <span class="skill">SQL</span>
-    <span class="skill">Excel (Advanced)</span>
-    <span class="skill">Data Analysis</span>
-    <span class="skill">Root Cause Analysis</span>
-  </div>
-
-  <h3>Finance & Systems</h3>
-  <div class="skills-grid">
-    <span class="skill">Financial Reporting</span>
-    <span class="skill">Reconciliations</span>
-    <span class="skill">Budgeting</span>
-    <span class="skill">SAP</span>
-    <span class="skill">Dynamics 365</span>
   </div>
 </section>
 
-<section>
-  <h2>Professional Experience</h2>
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="section">
+  <div class="container">
 
-  <h3>Technical Officer – Leicester City Council (2025–Present)</h3>
-  <ul>
-    <li>Analysed mobility and parking datasets to support operational decision-making and reporting.</li>
-    <li>Ensured data integrity, accuracy, and compliance for internal reporting and audit requirements.</li>
-  </ul>
+    <h2 class="section-title">Core Skills</h2>
+    <p class="section-subtitle">Business Analysis, Data, Finance & Product Thinking</p>
 
-  <h3>Customer Service Officer – Leicester City Council (2024–2024)</h3>
-  <ul>
-    <li>Delivered high-volume frontline customer service in transport operations.</li>
-  </ul>
+    <div class="skills">
 
-  <h3>Business Analyst – MySanity (AI Product Case Study) (2025–Present)</h3>
-  <ul>
-    <li>Defined structured business requirements for AI wellbeing platform.</li>
-    <li>Designed user journeys and behavioural engagement systems.</li>
-  </ul>
+      <div class="skill">Requirements Gathering</div>
+      <div class="skill">Process Mapping</div>
+      <div class="skill">User Stories</div>
+      <div class="skill">Stakeholder Management</div>
 
+      <div class="skill">Power BI</div>
+      <div class="skill">SQL</div>
+      <div class="skill">Excel (Advanced)</div>
+      <div class="skill">Data Analysis</div>
+
+      <div class="skill">SAP</div>
+      <div class="skill">Dynamics 365</div>
+      <div class="skill">Financial Reporting</div>
+      <div class="skill">Reconciliations</div>
+
+      <div class="skill">AI Product Thinking</div>
+      <div class="skill">System Design</div>
+      <div class="skill">Business Process Improvement</div>
+
+    </div>
+
+  </div>
 </section>
 
-<section>
-  <h2>Selected Projects</h2>
+<!-- ================= EXPERIENCE ================= -->
+<section id="experience" class="section">
+  <div class="container">
 
-  <h3>MySanity AI Platform</h3>
-  <ul>
-    <li>Business requirements, user journeys, MVP definition.</li>
-  </ul>
+    <h2 class="section-title">Experience</h2>
+    <p class="section-subtitle">Career progression across finance, data, and business analysis</p>
 
-  <a class="button" href="portfolio.html">View Case Studies</a>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <h3>Technical Officer – Leicester City Council</h3>
+        <span>2025 – Present</span>
+        <p>
+          Analyse mobility and parking datasets, ensure data accuracy, support reporting,
+          and contribute to operational improvements through data insights.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Customer Service Officer – Leicester City Council</h3>
+        <span>2024</span>
+        <p>
+          Managed high-volume customer interactions, resolved enquiries,
+          and maintained accurate service records in a fast-paced environment.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Business Analyst – MySanity (AI Product)</h3>
+        <span>2025 – Present</span>
+        <p>
+          Defining requirements for an AI behavioural intelligence platform combining
+          mood tracking, sleep analytics, and conversational AI (text + voice).
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Business Analyst – Inwebtify</h3>
+        <span>2022 – 2024</span>
+        <p>
+          Led requirements gathering, built Power BI dashboards, and improved payment
+          processing systems through data analysis and process optimisation.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
 </section>
 
-<section class="cta">
-  <h2>Let’s Connect</h2>
-  <p>Actively seeking Business Analyst, Data Analyst, and Finance roles.</p>
+<!-- ================= FEATURED CASE STUDY ================= -->
+<section class="section">
+  <div class="container">
 
-  <a class="button" href="mailto:olasamz09@gmail.com">Contact Me</a>
-  <a class="button" href="portfolio.html">View Case Studies</a>
+    <h2 class="section-title">Featured Case Study</h2>
+    <p class="section-subtitle">MySanity AI Behavioural Intelligence Platform</p>
+
+    <div class="case-card">
+
+      <div class="case-content">
+
+        <h3>MySanity App</h3>
+
+        <p>
+          An AI-powered behavioural intelligence system that combines mood tracking,
+          sleep analysis, and conversational AI (text + voice) to generate personalised
+          wellbeing insights and recommendations.
+        </p>
+
+        <p>
+          Built as a full Business Analysis case study covering requirements, user journeys,
+          system design, AI workflows, and MVP prioritisation.
+        </p>
+
+        <a href="mysanity-app.html" class="btn btn-primary">View Case Study</a>
+
+      </div>
+
+    </div>
+
+  </div>
 </section>
 
-</div>
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section">
+  <div class="container card cta">
+
+    <h2 class="section-title">Let’s Connect</h2>
+
+    <p class="section-subtitle">
+      Open to Business Analyst, Data Analyst, and Product roles
+    </p>
+
+    <a href="mailto:olasamz09@gmail.com" class="btn btn-primary">Email Me</a>
+    <a href="case-studies.html" class="btn btn-secondary">View Work</a>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <p>© 2026 Sam Olaosebikan | Business Analyst Portfolio</p>
+</footer>
 
 </body>
 </html>
