@@ -3,238 +3,164 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MySanity Case Study | Sam Olaosebikan</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f7fb;
-      color: #1f2937;
-      line-height: 1.6;
-    }
-
-    nav {
-      background: #0f172a;
-      padding: 12px 20px;
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      position: sticky;
-      top: 0;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 14px;
-      padding: 6px 10px;
-      border-radius: 6px;
-    }
-
-    nav a:hover {
-      background: #1f2937;
-    }
-
-    header {
-      background: linear-gradient(135deg, #0f172a, #1f2937);
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 40px;
-    }
-
-    header p {
-      opacity: 0.85;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    section {
-      background: white;
-      margin: 25px 0;
-      padding: 25px;
-      border-radius: 14px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-    }
-
-    h2 {
-      border-bottom: 2px solid #e5e7eb;
-      padding-bottom: 8px;
-      margin-bottom: 15px;
-    }
-
-    .tag {
-      display: inline-block;
-      padding: 6px 12px;
-      background: #0f172a;
-      color: white;
-      border-radius: 999px;
-      font-size: 12px;
-      margin-bottom: 10px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-  </style>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
 
+<!-- ================= NAVIGATION ================= -->
 <nav>
-  <a href="index.html">🏠 Home</a>
-  <a href="portfolio.html">📚 Case Studies</a>
+  <div class="logo">Sam OA</div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="case-studies.html">Case Studies</a></li>
+    <li><a href="index.html#experience">Experience</a></li>
+    <li><a href="index.html#skills">Skills</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
 </nav>
 
-<header>
-  <h1>MySanity</h1>
-  <p>AI Wellbeing & Productivity Platform — Business Analysis Case Study</p>
+<!-- ================= HERO ================= -->
+<header class="hero" style="min-height:60vh;">
+  <div class="hero-content">
+
+    <h1>MySanity</h1>
+
+    <h2>AI Behavioural Intelligence Platform</h2>
+
+    <p>
+      A Business Analysis case study designing an AI-powered system that combines
+      mood tracking, sleep data, and conversational AI (text + voice) to generate
+      personalised wellbeing and behavioural insights.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#overview" class="btn btn-primary">Start Reading</a>
+      <a href="case-studies.html" class="btn btn-secondary">Back to Case Studies</a>
+    </div>
+
+  </div>
 </header>
 
-<div class="container">
+<!-- ================= OVERVIEW ================= -->
+<section id="overview" class="section">
+  <div class="container card">
 
-<!-- OVERVIEW -->
-<section>
-  <h2>Overview</h2>
-  <span class="tag">Business Analysis | Product Thinking | AI Systems</span>
+    <h2 class="section-title">Executive Summary</h2>
 
-  <p>
-    MySanity is a conceptual AI-powered wellbeing and productivity platform designed to help users
-    understand behavioural patterns across mood, focus, and productivity.
-  </p>
+    <p>
+      MySanity is an AI-powered behavioural intelligence platform designed to help users
+      understand and improve their wellbeing through structured insights generated from
+      mood tracking, sleep analysis, and conversational AI interactions.
+    </p>
 
-  <p>
-    This case study demonstrates end-to-end Business Analysis capability including requirements definition,
-    user journey design, and MVP scoping.
-  </p>
+    <p>
+      Unlike traditional wellness apps that operate in isolation (sleep tracking, journaling,
+      meditation), MySanity integrates multiple behavioural signals into a single system
+      that uses AI to detect patterns and deliver personalised recommendations.
+    </p>
+
+    <p>
+      The platform supports both <strong>text and voice-based AI interaction</strong>,
+      enabling users to engage naturally while receiving real-time behavioural feedback.
+    </p>
+
+  </div>
 </section>
 
-<!-- PROBLEM -->
-<section>
-  <h2>Problem Statement</h2>
+<!-- ================= BUSINESS PROBLEM ================= -->
+<section class="section">
+  <div class="container card">
 
-  <p>
-    Modern users struggle with fragmented tools for productivity and wellbeing. Task management apps focus
-    only on output, while wellbeing apps focus only on mood — with no integration between the two.
-  </p>
+    <h2 class="section-title">Business Problem</h2>
 
-  <p>
-    This leads to:
-  </p>
+    <p>
+      Users today rely on multiple disconnected applications to manage wellbeing:
+      sleep trackers, mood journals, productivity apps, and meditation tools.
+    </p>
 
-  <ul>
-    <li>Lack of insight into productivity vs mental state</li>
-    <li>Disconnected tools with no unified system</li>
-    <li>Limited behavioural awareness over time</li>
-  </ul>
+    <p>
+      These systems do not communicate with each other, resulting in:
+    </p>
+
+    <ul>
+      <li>Fragmented behavioural data across multiple platforms</li>
+      <li>Lack of meaningful insight into patterns (sleep vs mood vs productivity)</li>
+      <li>Generic recommendations with low personalisation</li>
+      <li>Low long-term engagement with wellness apps</li>
+    </ul>
+
+    <p>
+      As a result, users collect data but do not gain actionable understanding of their behaviour.
+    </p>
+
+  </div>
 </section>
 
-<!-- OBJECTIVES -->
-<section>
-  <h2>Objectives</h2>
+<!-- ================= OBJECTIVES ================= -->
+<section class="section">
+  <div class="container card">
 
-  <ul>
-    <li>Design a unified system combining productivity + wellbeing tracking</li>
-    <li>Enable users to understand behavioural patterns over time</li>
-    <li>Provide AI-driven insights and recommendations</li>
-    <li>Define a clear MVP for initial product development</li>
-  </ul>
+    <h2 class="section-title">Project Objectives</h2>
+
+    <ul>
+      <li>Centralise behavioural data (mood, sleep, activity) into one system</li>
+      <li>Enable AI-driven conversational interaction (text + voice)</li>
+      <li>Identify behavioural patterns across time</li>
+      <li>Provide personalised wellbeing recommendations</li>
+      <li>Improve user self-awareness and engagement</li>
+    </ul>
+
+  </div>
 </section>
 
-<!-- USERS -->
-<section>
-  <h2>User Groups</h2>
+<!-- ================= MY ROLE ================= -->
+<section class="section">
+  <div class="container card">
 
-  <ul>
-    <li><strong>Working Professionals:</strong> Managing workload and burnout risk</li>
-    <li><strong>Students:</strong> Balancing focus, study, and mental wellbeing</li>
-    <li><strong>Self-improvement users:</strong> Tracking habits and performance trends</li>
-  </ul>
+    <h2 class="section-title">My Role (Business Analyst)</h2>
+
+    <p>
+      I was responsible for defining the business requirements, structuring the product vision,
+      and translating user needs into system-level specifications.
+    </p>
+
+    <ul>
+      <li>Requirements gathering and definition</li>
+      <li>Process mapping and user journey design</li>
+      <li>Feature prioritisation (MVP planning)</li>
+      <li>Stakeholder alignment with developers and AI engineers</li>
+      <li>Defining functional and non-functional requirements</li>
+      <li>Designing AI interaction flows (text + voice)</li>
+    </ul>
+
+  </div>
 </section>
 
-<!-- REQUIREMENTS -->
-<section>
-  <h2>Business Requirements</h2>
+<!-- ================= CTA ================= -->
+<section class="section">
+  <div class="container card cta">
 
-  <h3>Functional Requirements</h3>
-  <ul>
-    <li>Daily mood and productivity check-in</li>
-    <li>Behaviour tracking dashboard</li>
-    <li>AI-generated insights and recommendations</li>
-    <li>Trend analysis over time</li>
-  </ul>
+    <h2 class="section-title">Next Section</h2>
 
-  <h3>Non-Functional Requirements</h3>
-  <ul>
-    <li>Data privacy and secure storage</li>
-    <li>Fast response system performance</li>
-    <li>Simple and intuitive user experience</li>
-  </ul>
+    <p class="section-subtitle">
+      Stakeholder Analysis, User Personas, and System Requirements
+    </p>
+
+    <a href="case-studies.html" class="btn btn-primary">Back to Case Studies</a>
+
+  </div>
 </section>
 
-<!-- USER JOURNEY -->
-<section>
-  <h2>User Journey</h2>
-
-  <ul>
-    <li>User logs into system</li>
-    <li>Completes daily mood + productivity check-in</li>
-    <li>System captures behavioural data</li>
-    <li>AI processes patterns and correlations</li>
-    <li>User receives insights and recommendations</li>
-  </ul>
-</section>
-
-<!-- MVP -->
-<section>
-  <h2>MVP Scope</h2>
-
-  <h3>Included in MVP</h3>
-  <ul>
-    <li>Daily check-in system</li>
-    <li>Basic dashboard</li>
-    <li>Simple AI insights</li>
-  </ul>
-
-  <h3>Future Enhancements</h3>
-  <ul>
-    <li>Predictive burnout detection</li>
-    <li>Calendar integrations</li>
-    <li>Advanced AI coaching system</li>
-  </ul>
-</section>
-
-<!-- VALUE -->
-<section>
-  <h2>Outcome</h2>
-
-  <p>
-    This case study demonstrates structured Business Analysis capability including requirements gathering,
-    system thinking, and MVP definition.
-  </p>
-
-  <p>
-    It shows the ability to translate an abstract idea into a structured, buildable product framework.
-  </p>
-</section>
-
-</div>
+<!-- ================= FOOTER ================= -->
+<footer>
+  <p>© 2026 MySanity Case Study | Sam Olaosebikan</p>
+</footer>
 
 </body>
 </html>
