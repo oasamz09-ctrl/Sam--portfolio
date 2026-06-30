@@ -3,137 +3,84 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio | Sam Olaosebikan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Case Studies | Sam Olaosebikan</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f7fb;
-      color: #1f2937;
-    }
-
-    nav {
-      background: #0f172a;
-      padding: 12px 20px;
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      position: sticky;
-      top: 0;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 14px;
-      padding: 6px 10px;
-      border-radius: 6px;
-    }
-
-    nav a:hover {
-      background: #1f2937;
-    }
-
-    header {
-      background: linear-gradient(135deg, #0f172a, #1f2937);
-      color: white;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 40px;
-    }
-
-    header p {
-      opacity: 0.85;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: auto;
-      padding: 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 25px;
-      border-radius: 14px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-      margin-top: 30px;
-      transition: 0.2s ease;
-    }
-
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-    }
-
-    .tag {
-      display: inline-block;
-      padding: 6px 12px;
-      font-size: 12px;
-      border-radius: 999px;
-      background: #0f172a;
-      color: white;
-      margin-bottom: 10px;
-    }
-
-    a.button {
-      display: inline-block;
-      margin-top: 15px;
-      padding: 10px 16px;
-      background: #0f172a;
-      color: white;
-      text-decoration: none;
-      border-radius: 8px;
-      font-size: 14px;
-    }
-
-    a.button:hover {
-      background: #1f2937;
-    }
-
-  </style>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 
 <body>
 
+<!-- ================= NAVIGATION ================= -->
 <nav>
-  <a href="index.html">🏠 Home</a>
-  <a href="portfolio.html">📚 Portfolio</a>
-  <a href="mysanity.html">📄 MySanity Case Study</a>
+  <div class="logo">Sam OA</div>
+
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="case-studies.html">Case Studies</a></li>
+    <li><a href="index.html#experience">Experience</a></li>
+    <li><a href="index.html#skills">Skills</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
 </nav>
 
-<header>
-  <h1>Portfolio</h1>
-  <p>Business Analysis | Data | Product Thinking</p>
+<!-- ================= HEADER ================= -->
+<header class="hero" style="min-height:50vh;">
+  <div class="hero-content">
+
+    <h1>Case Studies</h1>
+
+    <h2>Business Analysis • Data • AI Product Work</h2>
+
+    <p>
+      A collection of structured case studies demonstrating requirements analysis,
+      process improvement, data insights, and AI product design thinking.
+    </p>
+
+  </div>
 </header>
 
-<div class="container">
+<!-- ================= CASE STUDIES ================= -->
+<section class="section">
+  <div class="container">
 
-  <div class="card">
-    <span class="tag">Flagship Case Study</span>
-    <h2>MySanity AI Wellbeing & Productivity App</h2>
-    <p>
-      A business analysis and product thinking case study focused on designing an AI-powered wellbeing
-      and productivity application. This project explores user behaviour, system requirements,
-      and feature design to support mental clarity, productivity tracking, and intelligent recommendations.
-    </p>
+    <h2 class="section-title">All Projects</h2>
+    <p class="section-subtitle">Click to explore detailed Business Analysis case studies</p>
 
-    <p>
-      The case study demonstrates end-to-end business analysis capability including requirements gathering,
-      stakeholder thinking, MVP definition, and product structure design.
-    </p>
+    <div class="grid grid-3">
 
-    <a class="button" href="mysanity.html">View Full Case Study</a>
+      <!-- ================= MYSANITY ================= -->
+      <div class="case-card">
+
+        <div class="case-content">
+
+          <h3>MySanity AI Platform</h3>
+
+          <p>
+            AI behavioural intelligence system combining mood tracking,
+            sleep analytics, and conversational AI (text + voice).
+          </p>
+
+          <p>
+            Covers requirements, user journeys, system design, and MVP planning.
+          </p>
+
+          <a href="mysanity-app.html" class="btn btn-primary">View Case Study</a>
+
+        </div>
+
+      </div>
+
+    </div>
+
   </div>
+</section>
 
-</div>
+<!-- ================= FOOTER ================= -->
+<footer>
+  <p>© 2026 Sam Olaosebikan | Case Studies</p>
+</footer>
 
 </body>
 </html>
