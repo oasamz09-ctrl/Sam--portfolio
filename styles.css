@@ -1,174 +1,248 @@
 /* ===========================
-   RESET
+   MODERN PORTFOLIO (FINAL FIXED VERSION)
 =========================== */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-html {
-    scroll-behavior: smooth;
+:root{
+    --primary:#0F172A;
+    --accent:#2563EB;
+    --accent-light:#E0ECFF;
+
+    --bg:#F6F8FC;
+    --card:#FFFFFF;
+
+    --text:#0F172A;
+    --muted:#64748B;
+    --border:#E6EAF2;
 }
 
 /* ===========================
-   BASE
+RESET + TYPOGRAPHY CORE FIX
 =========================== */
 
-body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-    background: #F8FAFC;
-    color: #0F172A;
-    line-height: 1.6;
-    font-size: 16px;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Inter", system-ui, -apple-system, Segoe UI, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+
+    font-size:15.5px;
+    line-height:1.7;
+
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
 }
 
 /* ===========================
-   VARIABLES
+NAV (MODERN GLASS STYLE)
 =========================== */
 
-:root {
-    --primary: #0F172A;
-    --secondary: #1E293B;
-    --accent: #2563EB;
-    --accent-light: #DBEAFE;
-    --background: #F8FAFC;
-    --card: #FFFFFF;
-    --muted: #64748B;
-    --border: #E2E8F0;
+nav{
+    position:sticky;
+    top:0;
+    z-index:999;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:14px 8%;
+    background:rgba(255,255,255,0.85);
+    backdrop-filter: blur(10px);
+    border-bottom:1px solid var(--border);
+}
+
+.logo{
+    font-size:18px;
+    font-weight:700;
+    letter-spacing:-0.3px;
+    color:var(--primary);
+}
+
+.nav-links{
+    display:flex;
+    gap:22px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(--muted);
+    font-size:14px;
+    font-weight:500;
+    transition:.2s;
+}
+
+.nav-links a:hover{
+    color:var(--primary);
 }
 
 /* ===========================
-   TYPOGRAPHY
+HERO (CLEAN MODERN)
 =========================== */
 
-h1, h2, h3, h4 {
-    font-weight: 700;
-    letter-spacing: -0.02em;
-    line-height: 1.2;
+.hero{
+    min-height:68vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+    padding:60px 20px;
+
+    background:linear-gradient(135deg,#0F172A,#1E293B);
+    color:white;
 }
 
-p {
-    color: var(--secondary);
-    margin-bottom: 1rem;
+.hero-content{
+    max-width:850px;
 }
 
-a {
-    color: var(--accent);
-    text-decoration: none;
+.hero h1{
+    font-size:54px;
+    letter-spacing:-1px;
+    margin-bottom:10px;
 }
 
-a:hover {
-    opacity: 0.8;
+.hero h2{
+    font-size:20px;
+    font-weight:500;
+    color:#CBD5E1;
+    margin-bottom:14px;
+}
+
+.hero p{
+    font-size:15.5px;
+    color:#E2E8F0;
+    margin-bottom:18px;
 }
 
 /* ===========================
-   NAV
+BUTTONS
 =========================== */
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 18px 8%;
-    background: var(--card);
-    border-bottom: 1px solid var(--border);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    flex-wrap:wrap;
 }
 
-nav .logo {
-    font-weight: 700;
-    font-size: 18px;
+.btn{
+    padding:11px 18px;
+    border-radius:10px;
+    font-size:14px;
+    font-weight:600;
+    text-decoration:none;
+    transition:.2s;
+}
+
+.btn-primary{
+    background:white;
+    color:var(--primary);
+}
+
+.btn-primary:hover{
+    transform:translateY(-2px);
+}
+
+.btn-secondary{
+    border:1px solid rgba(255,255,255,0.5);
+    color:white;
+}
+
+.btn-secondary:hover{
+    background:white;
+    color:var(--primary);
 }
 
 /* ===========================
-   SECTIONS
+LAYOUT (CENTRED PROPERLY)
 =========================== */
 
-section {
-    padding: 60px 8%;
+.container{
+    max-width:980px;
+    margin:0 auto;
+    padding:0 20px;
 }
 
-section h2 {
-    font-size: 28px;
-    margin-bottom: 20px;
+.section{
+    padding:18px 0;
 }
 
 /* ===========================
-   CARDS
+CARDS (MODERN CLEAN)
 =========================== */
 
-.card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    padding: 20px;
+.card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:14px;
+
+    padding:22px;
+
+    box-shadow:0 6px 18px rgba(15,23,42,0.04);
 }
 
 /* ===========================
-   BUTTONS (RESTORED ORIGINAL)
+TYPOGRAPHY FIX (THIS IS WHAT WAS WRONG)
 =========================== */
 
-button,
-.btn {
-    background: var(--accent);
-    color: white;
-    border: none;
-    padding: 10px 16px;
-    border-radius: 8px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.2s ease;
+.section-title{
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:-0.6px;
+    margin-bottom:10px;
 }
 
-button:hover,
-.btn:hover {
-    background: #1d4ed8;
+.section-subtitle{
+    color:var(--muted);
+    margin-bottom:12px;
+}
+
+p{
+    margin-bottom:10px;
+    color:var(--text);
+}
+
+ul{
+    margin:8px 0;
+    padding-left:18px;
+}
+
+li{
+    margin-bottom:6px;
+    color:#334155;
 }
 
 /* ===========================
-   GRID
+FOOTER
 =========================== */
 
-.grid {
-    display: grid;
-    gap: 20px;
-}
-
-.grid-2 {
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.grid-3 {
-    grid-template-columns: repeat(3, 1fr);
+footer{
+    margin-top:20px;
+    background:var(--primary);
+    color:white;
+    text-align:center;
+    padding:26px;
+    font-size:14px;
 }
 
 /* ===========================
-   FOOTER
+RESPONSIVE
 =========================== */
 
-footer {
-    padding: 40px 8%;
-    text-align: center;
-    color: var(--muted);
-    border-top: 1px solid var(--border);
-}
+@media(max-width:900px){
 
-/* ===========================
-   RESPONSIVE
-=========================== */
+.hero h1{font-size:38px;}
+.hero h2{font-size:18px;}
 
-@media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        gap: 10px;
-    }
+.nav-links{display:none;}
 
-    .grid-2,
-    .grid-3 {
-        grid-template-columns: 1fr;
-    }
 }
