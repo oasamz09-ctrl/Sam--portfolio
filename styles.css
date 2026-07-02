@@ -1,5 +1,5 @@
 /* ===========================
-   MODERN PORTFOLIO UI (2026 STYLE)
+   MODERN PORTFOLIO (FINAL FIXED VERSION)
 =========================== */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
@@ -17,6 +17,10 @@
     --border:#E6EAF2;
 }
 
+/* ===========================
+RESET + TYPOGRAPHY CORE FIX
+=========================== */
+
 *{
     margin:0;
     padding:0;
@@ -24,24 +28,30 @@
 }
 
 body{
-    font-family: Inter, system-ui, -apple-system, Segoe UI, sans-serif;
+    font-family:"Inter", system-ui, -apple-system, Segoe UI, sans-serif;
     background:var(--bg);
     color:var(--text);
+
+    font-size:15.5px;
     line-height:1.7;
+
     -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
 }
 
 /* ===========================
-NAV (CLEAN GLASS STYLE)
+NAV (MODERN GLASS STYLE)
 =========================== */
 
 nav{
     position:sticky;
     top:0;
     z-index:999;
+
     display:flex;
     justify-content:space-between;
     align-items:center;
+
     padding:14px 8%;
     background:rgba(255,255,255,0.85);
     backdrop-filter: blur(10px);
@@ -49,10 +59,10 @@ nav{
 }
 
 .logo{
-    font-weight:700;
     font-size:18px;
+    font-weight:700;
+    letter-spacing:-0.3px;
     color:var(--primary);
-    letter-spacing:-0.2px;
 }
 
 .nav-links{
@@ -64,8 +74,8 @@ nav{
 .nav-links a{
     text-decoration:none;
     color:var(--muted);
-    font-weight:500;
     font-size:14px;
+    font-weight:500;
     transition:.2s;
 }
 
@@ -74,7 +84,7 @@ nav{
 }
 
 /* ===========================
-HERO (MODERN IMPACT)
+HERO (CLEAN MODERN)
 =========================== */
 
 .hero{
@@ -83,17 +93,19 @@ HERO (MODERN IMPACT)
     align-items:center;
     justify-content:center;
     text-align:center;
+
     padding:60px 20px;
+
     background:linear-gradient(135deg,#0F172A,#1E293B);
     color:white;
 }
 
 .hero-content{
-    max-width:900px;
+    max-width:850px;
 }
 
 .hero h1{
-    font-size:56px;
+    font-size:54px;
     letter-spacing:-1px;
     margin-bottom:10px;
 }
@@ -106,14 +118,13 @@ HERO (MODERN IMPACT)
 }
 
 .hero p{
-    font-size:16px;
+    font-size:15.5px;
     color:#E2E8F0;
-    max-width:720px;
-    margin:0 auto 20px auto;
+    margin-bottom:18px;
 }
 
 /* ===========================
-BUTTONS (MODERN)
+BUTTONS
 =========================== */
 
 .hero-buttons{
@@ -126,8 +137,8 @@ BUTTONS (MODERN)
 .btn{
     padding:11px 18px;
     border-radius:10px;
-    font-weight:600;
     font-size:14px;
+    font-weight:600;
     text-decoration:none;
     transition:.2s;
 }
@@ -152,7 +163,7 @@ BUTTONS (MODERN)
 }
 
 /* ===========================
-LAYOUT (CLEAN CENTERED SYSTEM)
+LAYOUT (CENTRED PROPERLY)
 =========================== */
 
 .container{
@@ -166,25 +177,27 @@ LAYOUT (CLEAN CENTERED SYSTEM)
 }
 
 /* ===========================
-CARDS (MODERN MINIMAL STYLE)
+CARDS (MODERN CLEAN)
 =========================== */
 
 .card{
     background:var(--card);
     border:1px solid var(--border);
     border-radius:14px;
+
     padding:22px;
-    box-shadow:0 6px 18px rgba(15, 23, 42, 0.04);
+
+    box-shadow:0 6px 18px rgba(15,23,42,0.04);
 }
 
 /* ===========================
-TYPOGRAPHY SYSTEM
+TYPOGRAPHY FIX (THIS IS WHAT WAS WRONG)
 =========================== */
 
 .section-title{
     font-size:28px;
     font-weight:700;
-    letter-spacing:-0.5px;
+    letter-spacing:-0.6px;
     margin-bottom:10px;
 }
 
@@ -205,7 +218,7 @@ ul{
 
 li{
     margin-bottom:6px;
-    color:var(--text);
+    color:#334155;
 }
 
 /* ===========================
